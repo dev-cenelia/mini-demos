@@ -3,6 +3,7 @@ import DemoCard from "../components/DemoCard";
 import Counter from "../demos/counter/Counter";
 import FruitList from "../demos/fruitList/FruitList";
 import LikeButton from "../demos/likeButton/LikeButton";
+import LivePreview from "../demos/livePreview/LivePreview";
 
 export default function DemoList() {
   return (
@@ -17,6 +18,10 @@ export default function DemoList() {
 
       <DemoCard title="LikeButton">
         <LikeButton />
+      </DemoCard>
+
+      <DemoCard title="LivePreview">
+        <LivePreview />
       </DemoCard>
     </div>
   );
