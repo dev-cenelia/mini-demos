@@ -27,7 +27,6 @@ export default function Counter() {
 
   return (
     <div>
-      <h1>Counter</h1>
       <p>
         {count}는은 {msg}
       </p>
