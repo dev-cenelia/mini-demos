@@ -4,6 +4,7 @@ import Counter from "../demos/counter/Counter";
 import FruitList from "../demos/fruitList/FruitList";
 import LikeButton from "../demos/likeButton/LikeButton";
 import LivePreview from "../demos/livePreview/LivePreview";
+import ToggleVisibility from "../demos/toggleVisibility/ToggleVisibility";
 
 export default function DemoList() {
   return (
@@ -22,6 +23,10 @@ export default function DemoList() {
 
       <DemoCard title="LivePreview">
         <LivePreview />
+      </DemoCard>
+
+      <DemoCard title="ToggleVisibility">
+        <ToggleVisibility />
       </DemoCard>
     </div>
   );
