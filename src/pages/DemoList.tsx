@@ -6,6 +6,7 @@ import LikeButton from "../demos/likeButton/LikeButton";
 import LivePreview from "../demos/livePreview/LivePreview";
 import UserPofile from "../demos/userCard/UserPofile";
 import ToggleVisibility from "../demos/toggleVisibility/ToggleVisibility";
+import ButtonDemo from "../demos/commonButton/ButtonDemo";
 
 export default function DemoList() {
   return (
@@ -32,6 +33,10 @@ export default function DemoList() {
 
       <DemoCard title="ToggleVisibility">
         <ToggleVisibility />
+      </DemoCard>
+
+      <DemoCard title="CommonButton">
+        <ButtonDemo />
       </DemoCard>
     </div>
   );

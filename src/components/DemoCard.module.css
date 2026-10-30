@@ -1,24 +1,111 @@
-.cardWrap {
+﻿.cardWrap {
   width: 100%;
   max-width: 360px;
   min-width: 0;
-  min-height: 180px;
   box-sizing: border-box;
-  padding: 24px;
-  border: 1px solid rgb(255 255 255 / 16%);
-  border-radius: 16px;
-  background: linear-gradient(135deg, #6558f5, #4438e8);
-  color: #fff;
-  box-shadow: 0 8px 24px rgb(0 0 0 / 14%);
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .title {
   margin: 0;
-  color: inherit;
-  font-size: 18px;
-  font-weight: 600;
   text-align: left;
+}
+/* Shared appearance for every DemoCard, including future demos. */
+.cardWrap {
+  min-height: 248px;
+  padding: 26px;
+  gap: 24px;
+  border: 1px solid #e1e5ee;
+  border-radius: 20px;
+  background: #fbfcff !important; /* Override DemoCard's inline random background. */
+  color: #34415b;
+  box-shadow: 0 6px 24px rgb(25 40 75 / 6%);
+  text-align: left;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e7eaf2;
+  color: #202c46;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.title::before {
+  content: '';
+  width: 7px;
+  height: 18px;
+  border-radius: 4px;
+  background: #7779df;
+}
+
+.cardWrap button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #dce0f2;
+  border-radius: 12px;
+  background: #eeeffc;
+  color: #4d50ad;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.cardWrap button:hover {
+  border-color: #b4b8e7;
+  background: #e2e4fa;
+}
+
+.cardWrap button:active {
+  transform: translateY(1px);
+}
+
+.cardWrap :is(button, input):focus-visible {
+  outline: 3px solid #797bdd;
+  outline-offset: 3px;
+}
+
+.cardWrap input {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #dce1ed;
+  border-radius: 12px;
+  background: #fff;
+  color: #26334c;
+  font: inherit;
+  font-size: 15px;
+}
+
+.cardWrap input::placeholder {
+  color: #8992a6;
+}
+
+@media (max-width: 480px) {
+  .cardWrap {
+    min-height: 0;
+    padding: 22px;
+    gap: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardWrap button {
+    transition: none;
+  }
 }
