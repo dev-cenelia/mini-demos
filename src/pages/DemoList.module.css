@@ -1,8 +1,172 @@
-.list {
+﻿.list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 360px));
   justify-content: center;
   align-items: start;
   gap: 24px;
-  padding: 24px;
+  padding: clamp(20px, 4vw, 48px) 24px;
 }
+
+/* Counter */
+.list > :nth-child(1) > div {
+  text-align: center;
+}
+
+.list > :nth-child(1) p {
+  padding: 16px 8px;
+  border-radius: 12px;
+  background: #f0f2f9;
+  color: #354363;
+  font-size: 18px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.list > :nth-child(1) button {
+  min-width: 48px;
+}
+
+/* Fruit list */
+.list > :nth-child(2) ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list > :nth-child(2) li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 12px;
+  border: 1px solid #e3e8e0;
+  border-radius: 12px;
+  background: #f2f6ef;
+  color: #52664a;
+  font-size: 14px;
+}
+
+.list > :nth-child(2) li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #8ca67a;
+}
+
+/* Like button */
+.list > :nth-child(3) button {
+  width: 100%;
+  min-height: 64px;
+  border-color: #f0dce4;
+  background: #fcf0f4;
+  color: #a94e70;
+}
+
+.list > :nth-child(3) button:hover {
+  border-color: #daa1b6;
+  background: #f8e3ec;
+}
+
+.list > :nth-child(3) svg {
+  flex-shrink: 0;
+  font-size: 22px;
+}
+
+/* Live preview */
+.list > :nth-child(4) > div {
+  color: #526079;
+}
+
+.list > :nth-child(4) input {
+  border-color: #dce1ed;
+  background: #fff;
+  color: #26334c;
+  border-radius: 12px;
+}
+
+.list > :nth-child(4) input::placeholder {
+  color: #8992a6;
+}
+
+.list > :nth-child(4) > div > :nth-child(2) {
+  border-color: #e1e5f1;
+  background: #f0f2fa;
+}
+
+.list > :nth-child(4) > div > :nth-child(2) > p:first-child {
+  color: #6b7590;
+}
+
+.list > :nth-child(4) > div > :last-child {
+  border-color: #e1e5f1;
+}
+
+/* Profile */
+.list > :nth-child(5) > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.list > :nth-child(5) p:first-child {
+  color: #25324c;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+.list > :nth-child(5) p:nth-child(2) {
+  color: #7a849a;
+  font-size: 14px;
+}
+
+.list > :nth-child(5) p:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #e9f4ee;
+  color: #397653;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.list > :nth-child(5) p:last-child::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Visibility toggle */
+.list > :nth-child(6) button {
+  width: 100%;
+}
+
+.list > :nth-child(6) p {
+  margin-top: 14px;
+  padding: 16px;
+  border: 1px dashed #cfd5e7;
+  border-radius: 12px;
+  background: #f3f5fb;
+  color: #65708a;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .list {
+    gap: 16px;
+    padding: 20px 16px;
+  }
+
+}
+
