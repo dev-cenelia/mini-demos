@@ -1,4 +1,3 @@
-import React from "react";
 import type { UserData } from "./UserPofile";
 
 type UserDataProps = {

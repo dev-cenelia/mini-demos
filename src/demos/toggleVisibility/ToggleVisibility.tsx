@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function ToggleVisibility() {
   const [isVisibility, setIsVisibility] = useState<boolean>(true);
