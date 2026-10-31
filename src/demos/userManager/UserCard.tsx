@@ -1,23 +1,25 @@
-import type { UserData } from "./UserManager";
 import styles from "./UserCard.module.css";
+import type { UserData } from "./UserManager";
 
 type UserDataProps = {
   userProfile: UserData;
-  isSelect: boolean;
-  onSelected: () => void;
+  onSelect: (name: UserData) => void;
+  selected: boolean;
 };
 
 export default function UserCard({
   userProfile,
-  isSelect,
-  onSelected,
+  selected,
+  onSelect,
 }: UserDataProps) {
   const { name, job } = userProfile;
   return (
-    <div className={styles.card}>
+    <div className={styles.card} data-selected={selected}>
       <p>{name}</p>
       <p>{job}</p>
-      <button onClick={onSelected}>{isSelect ? "선택" : "선택안됨"}</button>
+      <button aria-pressed={selected} onClick={() => onSelect(userProfile)}>
+        {selected ? "선택" : "선택안함"}
+      </button>
     </div>
   );
 }

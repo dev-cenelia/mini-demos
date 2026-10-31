@@ -5,20 +5,20 @@ import styles from "./UserManager.module.css";
 export type UserData = {
   name: string;
   job: string;
-  isSelected: boolean;
 };
 
 const userData: UserData[] = [
-  { name: "김철수", job: "Frontend Developer", isSelected: false },
-  { name: "이영희", job: "UI Designer", isSelected: false },
-  { name: "박민수", job: "backend Developer", isSelected: false },
+  { name: "김철수", job: "Frontend Developer" },
+  { name: "이영희", job: "UI Designer" },
+  { name: "박민수", job: "Backend Developer" },
 ];
-
 export default function UserManager() {
-  const [selectedUser, setSelectedUser] = useState<UserData>();
-
-  const handleSeletedUser = (user: UserData) => {
-    setSelectedUser((prev) => (prev?.name === user.name ? undefined : user));
+  // 선택(버튼) 상태관리
+  const [isSelect, setIsSelect] = useState<UserData | undefined>();
+  // 버튼 선택시 isSelect 업데이트
+  const handleUpdateSelect = (user: UserData) => {
+    setIsSelect((prev) => (prev?.name === user.name ? undefined : user));
+    console.log(isSelect);
   };
 
   return (
@@ -27,16 +27,18 @@ export default function UserManager() {
         <UserCard
           key={user.name}
           userProfile={user}
-          isSelect={selectedUser?.name === user.name}
-          onSelected={() => handleSeletedUser(user)}
+          selected={isSelect?.name === user.name}
+          onSelect={handleUpdateSelect}
         />
       ))}
 
-      <div className={styles.result}>
+      <div className={styles.result} aria-live="polite">
         <p>선택 결과</p>
-        {selectedUser
-          ? `${selectedUser.name}님을 선택하셨습니다.`
-          : "선택된 사용자가 없습니다."}
+        <p>
+          {isSelect
+            ? `${isSelect.name}님이 선택 되었습니다.`
+            : "아무도 선택하지 않았습니다."}
+        </p>
       </div>
     </div>
   );
