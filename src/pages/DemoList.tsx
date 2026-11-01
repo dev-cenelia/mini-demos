@@ -8,6 +8,7 @@ import UserPofile from "../demos/userCard/UserPofile";
 import ToggleVisibility from "../demos/toggleVisibility/ToggleVisibility";
 import ButtonDemo from "../demos/commonButton/ButtonDemo";
 import UserManager from "../demos/userManager/UserManager";
+import TodoList from "../demos/todoList/TodoList";
 
 export default function DemoList() {
   return (
@@ -42,6 +43,10 @@ export default function DemoList() {
 
       <DemoCard title="UserManager">
         <UserManager />
+      </DemoCard>
+
+      <DemoCard title="TodoList">
+        <TodoList />
       </DemoCard>
     </div>
   );

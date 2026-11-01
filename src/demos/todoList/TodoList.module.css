@@ -1,0 +1,118 @@
+.todo {
+  min-width: 0;
+  text-align: left;
+}
+
+.title {
+  margin: 0 0 14px;
+  color: #202c46;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.composer {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.todo .input {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid #dce0f2;
+  border-radius: 10px;
+  background: #fff;
+  color: #26334c;
+  font: inherit;
+  font-size: 12px;
+}
+
+.todo .input::placeholder {
+  color: #8992a6;
+}
+
+.todo .add {
+  flex-shrink: 0;
+  min-height: 42px;
+  padding: 9px 12px;
+  border: 1px solid #7779df;
+  border-radius: 10px;
+  background: #7779df;
+  color: #fff;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.todo .add:hover {
+  border-color: #6264ca;
+  background: #6264ca;
+}
+
+.list {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #e5e7f2;
+  border-radius: 12px;
+  background: #f3f3fc;
+}
+
+.item::before {
+  content: "";
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #9294e5;
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+  color: #34415b;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.todo .remove {
+  flex-shrink: 0;
+  min-height: 30px;
+  padding: 4px 7px;
+  border: 1px solid #eadce3;
+  border-radius: 7px;
+  background: #fff;
+  color: #a26379;
+  font: inherit;
+  font-size: 11px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.todo .remove:hover {
+  border-color: #d9a8ba;
+  background: #fcf0f4;
+}
+
+.todo :is(button, input):focus-visible {
+  outline: 2px solid #797bdd;
+  outline-offset: 3px;
+}
