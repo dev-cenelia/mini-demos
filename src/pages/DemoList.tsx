@@ -9,6 +9,7 @@ import ToggleVisibility from "../demos/toggleVisibility/ToggleVisibility";
 import ButtonDemo from "../demos/commonButton/ButtonDemo";
 import UserManager from "../demos/userManager/UserManager";
 import TodoList from "../demos/todoList/TodoList";
+import TodoCheck from "../demos/todoCheck/TodoCheck";
 
 export default function DemoList() {
   return (
@@ -47,6 +48,10 @@ export default function DemoList() {
 
       <DemoCard title="TodoList">
         <TodoList />
+      </DemoCard>
+
+      <DemoCard title="TodoCheck">
+        <TodoCheck />
       </DemoCard>
     </div>
   );
