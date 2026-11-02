@@ -21,6 +21,17 @@
   margin-top: 8px;
 }
 
+.card[data-selected="true"] {
+  border-color: #b4b8e7;
+  background: #f3f3ff;
+}
+
+.card > button[aria-pressed="true"] {
+  border-color: #7779df;
+  background: #7779df;
+  color: #fff;
+}
+
 .card::before {
   content: "";
   grid-column: 1;

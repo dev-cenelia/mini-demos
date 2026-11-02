@@ -1,0 +1,129 @@
+.todo {
+  min-width: 0;
+  color: #202c46;
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dce0f2;
+}
+
+.title {
+  margin: 0 0 14px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.description {
+  margin: 4px 0 0;
+  color: #68748c;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.summary {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.count {
+  color: #4d50ad;
+  font-size: 20px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.caption {
+  color: #68748c;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.list {
+  margin: 12px 0 0;
+  padding: 0 0 14px;
+  border-bottom: 1px solid #dce0f2;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: 1px solid #e5e7f2;
+  border-radius: 12px;
+  background: #f3f3fc;
+  box-sizing: border-box;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.todo .checkbox {
+  appearance: none;
+  display: grid;
+  flex-shrink: 0;
+  place-content: center;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #9294e5;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.todo .checkbox:checked {
+  border-color: #7779df;
+  background: #7779df;
+}
+
+.checkbox:checked::after {
+  content: "";
+  width: 8px;
+  height: 4px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: translateY(-1px) rotate(-45deg);
+}
+
+.checkbox:focus-visible {
+  outline: 2px solid #797bdd;
+  outline-offset: 4px;
+}
+
+.text {
+  min-width: 0;
+  margin: 0;
+  color: #34415b;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.checkbox:checked + .text {
+  color: #8992a6;
+  text-decoration: line-through;
+}
