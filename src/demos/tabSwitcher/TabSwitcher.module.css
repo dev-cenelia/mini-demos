@@ -1,0 +1,112 @@
+.switcher {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  color: #34415b;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  margin: 0 0 2px;
+  padding: 5px;
+  border: 1px solid #e1e5f1;
+  border-radius: 16px;
+  background: #f0f2fa;
+  list-style: none;
+}
+
+.tabs > li {
+  min-width: 0;
+}
+
+.tabs > li > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0 4px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: transparent;
+  color: #65708a;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tabs > li > button:hover {
+  border-color: #e1e5f1;
+  background: #e9ebf8;
+}
+
+.tabs > .active > button {
+  background: #e2e4fa;
+  border-color: #cdd0f0;
+  color: #4d50ad;
+  font-weight: 700;
+}
+
+.tabs > li > button:focus-visible {
+  outline: 2px solid #797bdd;
+  outline-offset: 2px;
+}
+
+.tabs > li > button:active {
+  transform: none;
+}
+.panel.isShow {
+  display: block;
+}
+.panel {
+  min-width: 0;
+  min-height: 130px;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid #e1e5f1;
+  border-radius: 14px;
+  background: #fff;
+  display: none;
+}
+
+.panel > p {
+  margin: 0;
+}
+
+.panel > p:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #25324c;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.panel svg {
+  flex-shrink: 0;
+  color: #7779df;
+  font-size: 20px;
+}
+
+.panel > p + p {
+  margin-top: 12px;
+  color: #7a849a;
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.status {
+  margin: 0;
+  color: #7a849a;
+  font-size: 12px;
+  line-height: 1.6;
+}
