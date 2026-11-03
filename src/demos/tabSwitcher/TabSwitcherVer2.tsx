@@ -64,7 +64,10 @@ export default function TabSwitcherVer2() {
         {/* <li className={styles.active}>프로필</li> */}
       </ul>
       {selectPanel && (
-        <div key={selectPanel.id} className={styles.panel}>
+        <div
+          key={selectPanel.id}
+          className={`${styles.panel} ${styles.isShow}`}
+        >
           <p>
             <selectPanel.icon />
             {selectPanel.heading}
