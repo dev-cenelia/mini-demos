@@ -13,6 +13,7 @@ import TodoCheck from "../demos/todoCheck/TodoCheck";
 import QuantitySelector from "../demos/quantitySelector/QuantitySelector";
 import TabSwitcherVer2 from "../demos/tabSwitcher/TabSwitcherVer2";
 import Accordion from "../demos/accordion/Accordion";
+import SearchFilter from "../demos/searchFilter/SearchFilter";
 
 export default function DemoList() {
   return (
@@ -71,6 +72,10 @@ export default function DemoList() {
 
       <DemoCard title="Accordion">
         <Accordion />
+      </DemoCard>
+
+      <DemoCard title="SearchFilter">
+        <SearchFilter />
       </DemoCard>
     </div>
   );
