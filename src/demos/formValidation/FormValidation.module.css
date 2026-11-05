@@ -1,0 +1,111 @@
+.formValidation {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid #e1e5ee;
+  border-radius: 20px;
+  background: #fff;
+  color: #34415b;
+  color-scheme: light;
+  text-align: left;
+}
+
+.formValidation > form > p:first-child {
+  margin: 0;
+  color: #25324c;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.formValidation > form > span {
+  margin-top: -8px;
+  color: #7a849a;
+  font-size: 13px;
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.formValidation > form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.formValidation > form > label > input {
+  width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: 9px 17px;
+  border: 1px solid #dce1eb;
+  border-radius: 999px;
+  background: #fff;
+  color: #25324c;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.formValidation > form > label > input::placeholder {
+  color: #8992a6;
+  opacity: 1;
+}
+
+.formValidation > form > label > input:focus-visible {
+  border-color: #797bdd;
+  outline: 2px solid #797bdd;
+  outline-offset: 2px;
+}
+
+.formValidation > form > button {
+  width: 100%;
+  min-height: 38px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  border: 1px solid #eeeffc;
+  border-radius: 999px;
+  background: #eeeffc;
+  color: #4d50ad;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.formValidation > form > button:hover {
+  border-color: #b4b8e7;
+  background: #e2e4fa;
+}
+
+.formValidation > form > button:focus-visible {
+  outline: 2px solid #797bdd;
+  outline-offset: 3px;
+}
+
+.formValidation > form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  margin: 0;
+}
+
+.formValidation > form > label + p {
+  margin: -6px 0 0;
+  padding-inline: 4px;
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}

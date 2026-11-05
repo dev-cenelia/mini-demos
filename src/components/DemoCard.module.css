@@ -18,7 +18,7 @@
   gap: 24px;
   border: 1px solid #e1e5ee;
   border-radius: 20px;
-  background: #fbfcff !important; /* Override DemoCard's inline random background. */
+  background: #fbfcff;
   color: #34415b;
   box-shadow: 0 6px 24px rgb(25 40 75 / 6%);
   text-align: left;

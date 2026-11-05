@@ -11,6 +11,7 @@ import UserManager from "../demos/userManager/UserManager";
 import TodoList from "../demos/todoList/TodoList";
 import TodoCheck from "../demos/todoCheck/TodoCheck";
 import QuantitySelector from "../demos/quantitySelector/QuantitySelector";
+import FormValidation from "../demos/formValidation/FormValidation";
 import TabSwitcherVer2 from "../demos/tabSwitcher/TabSwitcherVer2";
 import Accordion from "../demos/accordion/Accordion";
 import SearchFilter from "../demos/searchFilter/SearchFilter";
@@ -63,6 +64,8 @@ export default function DemoList() {
         <QuantitySelector />
       </DemoCard>
 
+      <DemoCard title="FormValidation">
+        <FormValidation />
       {/* <DemoCard title="TabSwitcher">
         <TabSwitcher />
       </DemoCard> */}
