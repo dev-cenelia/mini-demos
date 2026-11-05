@@ -16,6 +16,7 @@ import TabSwitcherVer2 from "../demos/tabSwitcher/TabSwitcherVer2";
 import Accordion from "../demos/accordion/Accordion";
 import SearchFilter from "../demos/searchFilter/SearchFilter";
 import CategoryFilter from "../demos/categoryFilter/CategoryFilter";
+import DocumentTitle from "../demos/documentTitle/DocumentTitle";
 
 export default function DemoList() {
   return (
@@ -64,8 +65,6 @@ export default function DemoList() {
         <QuantitySelector />
       </DemoCard>
 
-      <DemoCard title="FormValidation">
-        <FormValidation />
       {/* <DemoCard title="TabSwitcher">
         <TabSwitcher />
       </DemoCard> */}
@@ -84,6 +83,14 @@ export default function DemoList() {
 
       <DemoCard title="CategoryFilter">
         <CategoryFilter />
+      </DemoCard>
+
+      <DemoCard title="FormValidation">
+        <FormValidation />
+      </DemoCard>
+
+      <DemoCard title="DocumentTitle">
+        <DocumentTitle />
       </DemoCard>
     </div>
   );
