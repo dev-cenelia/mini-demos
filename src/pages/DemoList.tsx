@@ -14,6 +14,7 @@ import QuantitySelector from "../demos/quantitySelector/QuantitySelector";
 import TabSwitcherVer2 from "../demos/tabSwitcher/TabSwitcherVer2";
 import Accordion from "../demos/accordion/Accordion";
 import SearchFilter from "../demos/searchFilter/SearchFilter";
+import CategoryFilter from "../demos/categoryFilter/CategoryFilter";
 
 export default function DemoList() {
   return (
@@ -76,6 +77,10 @@ export default function DemoList() {
 
       <DemoCard title="SearchFilter">
         <SearchFilter />
+      </DemoCard>
+
+      <DemoCard title="CategoryFilter">
+        <CategoryFilter />
       </DemoCard>
     </div>
   );
