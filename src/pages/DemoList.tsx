@@ -66,6 +66,8 @@ export default function DemoList() {
 
       <DemoCard title="FormValidation">
         <FormValidation />
+      </DemoCard>
+
       {/* <DemoCard title="TabSwitcher">
         <TabSwitcher />
       </DemoCard> */}
