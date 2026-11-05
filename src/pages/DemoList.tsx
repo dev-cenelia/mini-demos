@@ -12,6 +12,10 @@ import TodoList from "../demos/todoList/TodoList";
 import TodoCheck from "../demos/todoCheck/TodoCheck";
 import QuantitySelector from "../demos/quantitySelector/QuantitySelector";
 import FormValidation from "../demos/formValidation/FormValidation";
+import TabSwitcherVer2 from "../demos/tabSwitcher/TabSwitcherVer2";
+import Accordion from "../demos/accordion/Accordion";
+import SearchFilter from "../demos/searchFilter/SearchFilter";
+import CategoryFilter from "../demos/categoryFilter/CategoryFilter";
 
 export default function DemoList() {
   return (
@@ -62,6 +66,24 @@ export default function DemoList() {
 
       <DemoCard title="FormValidation">
         <FormValidation />
+      {/* <DemoCard title="TabSwitcher">
+        <TabSwitcher />
+      </DemoCard> */}
+
+      <DemoCard title="TabSwitcher">
+        <TabSwitcherVer2 />
+      </DemoCard>
+
+      <DemoCard title="Accordion">
+        <Accordion />
+      </DemoCard>
+
+      <DemoCard title="SearchFilter">
+        <SearchFilter />
+      </DemoCard>
+
+      <DemoCard title="CategoryFilter">
+        <CategoryFilter />
       </DemoCard>
     </div>
   );
