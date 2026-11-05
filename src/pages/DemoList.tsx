@@ -11,6 +11,7 @@ import UserManager from "../demos/userManager/UserManager";
 import TodoList from "../demos/todoList/TodoList";
 import TodoCheck from "../demos/todoCheck/TodoCheck";
 import QuantitySelector from "../demos/quantitySelector/QuantitySelector";
+import FormValidation from "../demos/formValidation/FormValidation";
 
 export default function DemoList() {
   return (
@@ -57,6 +58,10 @@ export default function DemoList() {
 
       <DemoCard title="QuantitySelector">
         <QuantitySelector />
+      </DemoCard>
+
+      <DemoCard title="FormValidation">
+        <FormValidation />
       </DemoCard>
     </div>
   );
