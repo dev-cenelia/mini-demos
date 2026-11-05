@@ -11,6 +11,8 @@ import UserManager from "../demos/userManager/UserManager";
 import TodoList from "../demos/todoList/TodoList";
 import TodoCheck from "../demos/todoCheck/TodoCheck";
 import QuantitySelector from "../demos/quantitySelector/QuantitySelector";
+import TabSwitcherVer2 from "../demos/tabSwitcher/TabSwitcherVer2";
+import Accordion from "../demos/accordion/Accordion";
 
 export default function DemoList() {
   return (
@@ -57,6 +59,18 @@ export default function DemoList() {
 
       <DemoCard title="QuantitySelector">
         <QuantitySelector />
+      </DemoCard>
+
+      {/* <DemoCard title="TabSwitcher">
+        <TabSwitcher />
+      </DemoCard> */}
+
+      <DemoCard title="TabSwitcher">
+        <TabSwitcherVer2 />
+      </DemoCard>
+
+      <DemoCard title="Accordion">
+        <Accordion />
       </DemoCard>
     </div>
   );
